@@ -1,0 +1,4 @@
+@EndUserText.label: 'Travel Expense Approval Simulation Service'
+define service ZUI_EXPENSE_SERVICE {
+  expose ZI_EXPENSE_API as ExpenseApi;
+}

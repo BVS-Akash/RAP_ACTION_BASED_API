@@ -1,0 +1,10 @@
+unmanaged implementation in class ZBP_I_EXPENSE_API unique;
+strict ( 2 );
+
+define behavior for ZI_EXPENSE_API alias ExpenseApi
+{
+  // A static action is invoked on the entity set, not on a persisted instance.
+  static action SimulateApproval
+    parameter ZI_EXPENSE_INPUT
+    result [1] ZI_EXPENSE_RESULT;
+}

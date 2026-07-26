@@ -1,0 +1,12 @@
+@EndUserText.label: 'Expense approval action input'
+define abstract entity ZI_EXPENSE_INPUT
+{
+  EmployeeID    : abap.char(20);
+  ExpenseType   : abap.char(30);
+  Amount        : abap.dec(15,2);
+  Currency      : abap.cuky(5);
+  TravelCountry : abap.char(3);
+  Days          : abap.int4;
+}
+
+// Abstract entities describe action payloads and are not independently exposed.

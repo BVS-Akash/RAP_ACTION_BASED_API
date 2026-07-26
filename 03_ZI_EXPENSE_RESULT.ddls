@@ -1,0 +1,11 @@
+@EndUserText.label: 'Expense approval action result'
+define abstract entity ZI_EXPENSE_RESULT
+{
+  ApprovalStatus : abap.char(10);
+  ApprovalLevel  : abap.char(10);
+  ApprovedAmount : abap.dec(15,2);
+  RiskCategory   : abap.char(10);
+  Message        : abap.char(255);
+}
+
+// This structure is deliberately different from ZI_EXPENSE_INPUT.

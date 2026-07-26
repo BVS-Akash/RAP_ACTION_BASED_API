@@ -1,0 +1,9 @@
+@EndUserText.label: 'Travel Expense Approval Simulation API'
+@Metadata.allowExtensions: true
+define root custom entity ZI_EXPENSE_API
+{
+  key RequestID : abap.char(32);
+}
+
+// RAP custom entities have no persistence table. This root exists solely as
+// the action host and OData endpoint for the stateless simulation.
